@@ -1,0 +1,17 @@
+{
+  "foods": [
+    {
+      "foodName": "Githeri",
+      "ingredients": "Mahindi, beans, Salt, Tomatoes, vitunguu",
+      "recipe": "In a large pan, add olive oil over medium heat. Once heated, saute onions for a couple of minutes until lightly golden and translucent in appearance. Stir in garlic, smoked paprika and curry powder. Cook on low heat while stirring for a minute.Now, add tomatoes; cook for three minutes or until the tomatoes are soft and mushy. Next, stir in beans, corn kernels, stock and salt; cover the githeri mixture and reduce heat to low-medium (Images 6-7). Simmer for about 8 minutes, stirring occasionally. Garnish githeri with spring onion (scallion) and cilantro",
+      "id": 1
+    },
+    {
+      "foodName": "Kachumbari",
+      "ingredients": "Nyanyas, vitunguu , dhania",
+      "recipe": "Chop chop",
+      "id": 2
+    }
+   
+  ]
+}
