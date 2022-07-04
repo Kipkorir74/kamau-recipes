@@ -11,7 +11,13 @@
       "ingredients": "Nyanyas, vitunguu , dhania",
       "recipe": "Chop chop",
       "id": 2
+    },
+    {
+      "foodName": "Murats",
+      "ingredients": "Sorghum, Mahindi",
+      "recipe": "Koroga koroga. Weka Maji.",
+      "files": "",
+      "id": 3
     }
-   
   ]
 }

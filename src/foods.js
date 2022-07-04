@@ -11,7 +11,7 @@ export class foods extends Component {
        }
      }
 
-    //  component mounts forfirst time and only executes once
+    //  component mounts for first time and only executes once
      componentDidMount(){
         axios.get('http://localhost:8000/foods')
         .then(response=>{
@@ -46,8 +46,6 @@ export class foods extends Component {
       ))}
       </div>
     
-        // </div>
-              
         
             
       

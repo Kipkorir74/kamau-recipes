@@ -5,14 +5,14 @@ import foods from "./foods";
 
 
 const FoodID = () => {
-    const[foods, setFoods]=useState([]);
-    const {id}= useState();
+    const[foods, setFoods]=useState({});
+    const [id, setID]= useState(1);
    
     useEffect(()=>{
-        axios.get(`http://localhost:8000/foods/`+ id)
+        axios.get(`http://localhost:8000/foods/${id}`)
         .then(response=>{
             console.log(response)
-            // setFoods(response.data)
+            setFoods(response.data)
         }
             
             )
@@ -21,10 +21,10 @@ const FoodID = () => {
             }
                 
                 )
-    },[])
+    },[id])
     return ( 
        <div>
-           
+           <input type="text" value={id} onChange={e=>setID(e.target.value)}/>
            <article>
                    <div> Name:{foods && foods.foodName}</div>
                    <p>Ingredients: {foods &&foods.ingredients}</p>

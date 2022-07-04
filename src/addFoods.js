@@ -8,10 +8,19 @@ import axios from 'axios'
       this.state = {
          foodName:'',
          ingredients:'',
-         recipe:''
+         recipe:'',
+         files:''
 
       }
     }
+    // handleChange=(e)=>{
+    //   const fileReader = new FileReader();
+    //   fileReader.readAsText(e.target.files[0], "UTF-8");
+    //   fileReader.onload = e => {
+    //     console.log("e.target.result", e.target.result);
+    //     this.setState(e.target.result);
+    //   };
+    // }
     //changeMonitor is an arrow function to handle changes as inserted by user
     //name attribute helps remove the redundancy of having separate handlers for each input.
     changeMonitor = (e) =>{
@@ -32,7 +41,7 @@ import axios from 'axios'
 
   render() {
       //destructure the state property
-      const{foodName,ingredients, recipe} = this.state;
+      const{foodName,ingredients, recipe, files} = this.state;
 
     return (
         <div className="create">
@@ -60,7 +69,12 @@ import axios from 'axios'
                 <input type="textarea" name='recipe' required value={recipe} onChange={this.changeMonitor}/>
           </div>
 
-          
+          {/* <h1>Upload File</h1>
+
+          <input type="file" onChange={this.handleChange} />
+          <br />
+          {"uploaded file content -- " + files} */}
+
           <button type='submit'>Add food </button>
     
 
